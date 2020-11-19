@@ -1,7 +1,7 @@
 import React from "react";
 
-import Location from "/images/location-symbol.png";
-import Search from "/images/search-symbol.png";
+import Location from "./location-symbol.png";
+import Search from "./search-symbol.png";
 
 export default function Form() {
   return (

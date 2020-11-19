@@ -1,16 +1,16 @@
 import React from "react";
 
-import Instagram from "/images/PngItem_20020.png";
-import Github from "/images/PngItem_1280311.png";
-import Linkedin from "/images/linkedinlogo.png";
-import Behance from "/images/behancelogo.png";
+import Instagram from "./PngItem_20020.png";
+import Github from "./PngItem_1280311.png";
+import Linkedin from "./linkedinlogo.png";
+import Behance from "./behancelogo.png";
 
 export default function Footer() {
   return (
     <footer>
       <p>
         <a
-          href="https://github.com/HazelLawrie/weather-application"
+          href="https://github.com/HazelLawrie/react-weather-application"
           target="_blank"
           rel="noreferrer"
         >
@@ -26,7 +26,7 @@ export default function Footer() {
         </a>
         and
         <a
-          href="https://boring-ardinghelli-f09f8b.netlify.app/"
+          href="https://confident-stonebraker-371fb5.netlify.app/"
           target="_blank"
           rel="noreferrer"
         >
