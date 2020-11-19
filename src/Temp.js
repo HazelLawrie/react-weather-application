@@ -7,7 +7,7 @@ export default function Temp(props) {
   return (
     <div className="row">
       <h2 id="main-temp" className="card-text col-sm temp">
-        <img id="main-icon" src="#" alt="" src={Cloudy} />
+        <img id="main-icon" alt="" src={Cloudy} />
         <span id="displayed-temp">
           {props.temperature} / {fahrenheit}
         </span>
