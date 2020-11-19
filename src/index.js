@@ -1,17 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import Pressure from "./Pressure";
+import Form from "./Form";
+import City from "./City";
+import Date from "./Date";
+import Temp from "./Temp";
+import Forecast from "./Forecast";
+import Footer from "./Footer";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import "./App.css";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function App() {
+  return (
+    <div className="App card card-body">
+      <Form />
+      <City city="London" />
+      <Date />
+      <Temp temperature={10} />
+      <Pressure />
+      <hr />
+      <Forecast />
+      <Footer />
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
