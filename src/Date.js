@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Date() {
   let data = {
-    date: "Friday 6th November 2020",
+    date: "Friday 20th November 2020",
     time: "16:00",
-    description: "Cloudy"
+    description: "Partly Cloudy"
   };
 
   return (

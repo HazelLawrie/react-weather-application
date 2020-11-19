@@ -1,12 +1,13 @@
 import React from "react";
+import Cloudy from "./cloudy.png";
 
 export default function Temp(props) {
-  let fahrenheit = (props.temperature * 9) / 5 + 32;
+  let fahrenheit = Math.round((props.temperature * 9) / 5 + 32);
 
   return (
     <div className="row">
       <h2 id="main-temp" className="card-text col-sm temp">
-        <img id="main-icon" src="#" alt="" />
+        <img id="main-icon" src="#" alt="" src={Cloudy} />
         <span id="displayed-temp">
           {props.temperature} / {fahrenheit}
         </span>

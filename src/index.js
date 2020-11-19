@@ -14,9 +14,9 @@ function App() {
   return (
     <div className="App card card-body">
       <Form />
-      <City city="London" />
+      <City city="London, United Kingdom" />
       <Date />
-      <Temp temperature={10} />
+      <Temp temperature={11} />
       <Pressure />
       <hr />
       <Forecast />
