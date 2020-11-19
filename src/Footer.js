@@ -16,15 +16,15 @@ export default function Footer() {
         >
           Open source-code
         </a>
-        by
+        &#160;by&#160;
         <a
           href="https://www.linkedin.com/in/hazel-lawrie/"
           target="_blank"
           rel="noreferrer"
         >
-          Hazel Lawrie
+           Hazel Lawrie 
         </a>
-        and
+        &#160;and&#160;
         <a
           href="https://confident-stonebraker-371fb5.netlify.app/"
           target="_blank"

@@ -8,7 +8,7 @@ export default function Temp(props) {
       <h2 id="main-temp" className="card-text col-sm temp">
         <img id="main-icon" src="#" alt="" />
         <span id="displayed-temp">
-          {props.temperature} and {fahrenheit}
+          {props.temperature} / {fahrenheit}
         </span>
         <a href="/" className="col" id="change-to-C">
           °C
