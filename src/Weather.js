@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import axios from "axios";
 import Location from "./location-symbol.png";
 import Search from "./search-symbol.png";
-import Date from "./Date";
+import FormatDate from "./FormatDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState( {ready: false} );
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
@@ -42,7 +43,7 @@ export default function Weather(props) {
   return (
     <div>
     <div className="City">
-      
+      <FormatDate />
       <form onSubmit={handleSubmit} id="form-all">
         <div className="input-group">
           <input
@@ -87,12 +88,10 @@ export default function Weather(props) {
         <p className="description text-capitalize">
           {weatherData.description}
         </p>
-        <Date date={weatherData.date} />
-      </h2>
+       </h2>
+       {weatherData.date.getDay()}
       </div>
-      
       <div className="row">
-    
     </div>
       <div className="row second-row">
       <h5 className="col pressure">
