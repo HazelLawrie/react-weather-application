@@ -1,18 +1,28 @@
 import React from "react";
 
-export default function Date() {
-  let data = {
-    date: "Friday 20th November 2020",
-    time: "16:00",
-  };
-
+export default function Date(props) {
+   let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+  let day = days[props.date.getDay()];
+  let hours = props.date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  
+  let minutes = props.date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   return (
-    <div className="row">
-      <h2 id="date" className="card-text col-sm date-time">
-        {data.date}
-        <br />
-        Last updated: {data.time}
-      </h2>
+    <div>
+      {day} {hours}:{minutes}
     </div>
   );
 }

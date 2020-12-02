@@ -14,11 +14,10 @@ export default function Weather(props) {
       temperature: response.data.main.temp,
       pressure: response.data.main.pressure,
       humidity: response.data.main.humidity,
-      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      iconUrl: "./src/wind-solid.svg",
       wind: response.data.wind.speed,
       city: response.data.name,
+      date: new Date(response.data.dt * 1000)
     });
   }
 
@@ -88,7 +87,7 @@ export default function Weather(props) {
         <p className="description text-capitalize">
           {weatherData.description}
         </p>
-        <Date />
+        <Date date={weatherData.date} />
       </h2>
       </div>
       
@@ -116,6 +115,10 @@ export default function Weather(props) {
     </div>
   );
   } else {
+    const apiKey = "0eff484678d87e85661f08a4a3365c9a";
+    let city = "Edinburgh";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
     search();
   return "Test...!";
 }
