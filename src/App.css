@@ -148,10 +148,11 @@ hr {
 img {
   margin: 20px 0;
 }
-
+.text-capitalize {
+  font-size: 20px;
+}
 .form-control {
   max-width: 250px;
-  border-radius: 5px 0 0 5px;
   margin-bottom: 20px;
   border: 0;
 }
@@ -164,6 +165,10 @@ img {
 
   font-size: 14px;
   line-height: 24px;
+}
+
+.description {
+  font-size: 20px;
 }
 
 .second-row {
