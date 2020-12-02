@@ -4,7 +4,6 @@ import Pressure from "./Pressure";
 import Form from "./Form";
 import City from "./City";
 import Date from "./Date";
-import Temp from "./Temp";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.css";
@@ -15,7 +14,7 @@ function App() {
     <div className="App card card-body">
       <div className="container">
       <Form />
-      <City city="Edinburgh, Scotland" />
+      <City city="London" />
       <Date />
       <Temp temperature={11} />
       <Pressure />

@@ -7,7 +7,7 @@ import Behance from "./behancelogo.png";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="Footer">
       <p>
         <a
           href="https://github.com/HazelLawrie/react-weather-application"
