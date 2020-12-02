@@ -73,7 +73,7 @@ export default function Weather(props) {
         {weatherData.city}
       </h2>
       <h2 id="main-temp" className="temp">
-        <img className="text-capitalize" id="main-icon" alt={weatherData.description} src={weatherData.iconUrl} />
+        <img className="text-capitalize" id="main-icon" alt={weatherData.description} src={Search} />
         <span id="displayed-temp">
           {Math.round(weatherData.temperature)}°C
         </span>
