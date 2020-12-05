@@ -6,7 +6,7 @@ import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState( {ready: false} );
-  const [setCity] = useState(props.defaultCity);
+  const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
     console.log(response.data);
@@ -33,15 +33,13 @@ export default function Weather(props) {
 
   function search() {
     const apiKey = "0eff484678d87e85661f08a4a3365c9a";
-    let city = "London";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
-    
   }
 
   if (weatherData.ready)  {
   return (
-    <div className="City">
+    <div className="Weather">
       <form onSubmit={handleSubmit} id="form-all">
         <div className="input-group">
           <input
@@ -63,10 +61,7 @@ export default function Weather(props) {
     </div>
   );
   } else {
-    const apiKey = "0eff484678d87e85661f08a4a3365c9a";
-    let city = "Edinburgh";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
+    
     search();
   return "Test...!";
 }
