@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Search from "./search-symbol.png";
 import "./Weather.css";
+import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState( {ready: false} );
@@ -40,7 +41,6 @@ export default function Weather(props) {
 
   if (weatherData.ready)  {
   return (
-    <div>
     <div className="City">
       <form onSubmit={handleSubmit} id="form-all">
         <div className="input-group">
@@ -59,48 +59,7 @@ export default function Weather(props) {
           </span>
         </div>
       </form>
-  
-      <h2 id="city" className="card-title col-sm location">
-        {weatherData.city}
-      </h2>
-      <h2 id="main-temp" className="temp">
-        <img className="text-capitalize" id="main-icon" alt={weatherData.description} src={Search} />
-        <span id="displayed-temp">
-          {Math.round(weatherData.temperature)}°C
-        </span>
-        <a href="/" className="col" id="change-to-C">
-          °C
-        </a>
-        <a href="/" id="change-to-F">
-          °F
-        </a> 
-        
-        <p className="description text-capitalize">
-          {weatherData.description}
-        </p>
-       </h2>
-       {weatherData.date.getDay()}
-      </div>
-      <div className="row">
-    </div>
-      <div className="row second-row">
-      <h5 className="col pressure">
-        Pressure:
-        <br />
-        <span id="pressure-value">{weatherData.pressure}</span>
-      </h5>
-      <h5 className="col humidity">
-        Humidity:
-        <br />
-        <span id="humidity-value">{weatherData.humidity}</span>%
-      </h5>
-
-      <h5 className="col wind-speed">
-        Wind:
-        <br />
-        <span id="wind-value">{Math.round(weatherData.wind)}</span> m/s
-      </h5>
-    </div>
+      <WeatherInfo data={weatherData} />
     </div>
   );
   } else {
