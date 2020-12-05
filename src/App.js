@@ -3,7 +3,7 @@ import "./App.css";
 import "./Weather.css";
 import Weather from "./Weather";
 import Footer from "./Footer";
-import Forecast from "./Forecast";
+import WeatherForecast from "./WeatherForecast";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
        <div className="container">
         <Weather defaultCity="Glasgow" />
         <hr />
-        <Forecast />
+        <WeatherForecast />
         <Footer />
     </div>
     </div>

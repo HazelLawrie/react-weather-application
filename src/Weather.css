@@ -104,7 +104,10 @@ hr {
   background-color: rgba(48, 18, 54, 0.3);
   border-radius: 7px;
 }
-
+.WeatherTemperature {
+  display: inline;
+  margin-left: 10px;
+}
 #main-icon {
   margin: 0;
   width: 100px;
