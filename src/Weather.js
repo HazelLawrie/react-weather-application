@@ -5,7 +5,7 @@ import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState( {ready: false} );
-  const [city, setCity] = useState(props.defaultCity);
+  const [setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
     console.log(response.data);
@@ -72,8 +72,7 @@ export default function Weather(props) {
           °C
         </a>
         <a href="/" id="change-to-F">
-          °F 
-         
+          °F
         </a> 
         
         <p className="description text-capitalize">
@@ -99,7 +98,7 @@ export default function Weather(props) {
       <h5 className="col wind-speed">
         Wind:
         <br />
-        <span id="wind-value">{weatherData.wind}</span> m/s
+        <span id="wind-value">{Math.round(weatherData.wind)}</span> m/s
       </h5>
     </div>
     </div>
