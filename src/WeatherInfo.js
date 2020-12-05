@@ -12,7 +12,7 @@ return(
       <h2 id="main-temp" className="temp">
           <WeatherIcon code={props.data.icon} />
         <span id="displayed-temp">
-          {Math.round(props.data.temperature)}°C
+          {Math.round(props.data.temperature)}<span className="unit">°C</span>
         </span>
         <a href="/" className="col" id="change-to-C">
           °C
