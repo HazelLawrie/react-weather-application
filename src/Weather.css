@@ -25,15 +25,21 @@ body {
 
 #input {
   border-radius: 20px 0 0 20px;
+  margin: 20px 0 0 20px;
+}
+
+#button {
+  margin: 20px 0 0 0;
 }
 
 footer p a {
   color: #fff;
   text-decoration: underline;
+  transition-duration: 200ms;
 }
 
 footer p a:hover {
-  color: #182456;
+  color: #9b6ece;
 }
 
 h1 {
@@ -51,7 +57,7 @@ h1 {
 }
 button {
   color: #fff;
-  background-color: #be9af7;
+  background-color: #9b6ece;
   border: 0;
   border-radius: 0 5px 5px 0;
 }
@@ -70,22 +76,10 @@ button:hover {
   box-shadow: 1px 1px 12px 0 rgb(94, 78, 88, 0.3);
 }
 
-#location-button-image,
 #search-button-image {
   width: 25px;
   height: 25px;
-  margin: 0 0 2px 0;
-}
-
-#location-button {
-  border-radius: 0;
-  margin-left: 13px;
-  background-color: #be9af7;
-  border-radius: 30px;
-}
-#location-button:hover {
-  background-color: #9b6ece;
-  box-shadow: 1px 1px 12px 0 rgb(94, 78, 88, 0.3);
+  margin: 0;
 }
 
 #date,

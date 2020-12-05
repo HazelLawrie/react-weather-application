@@ -44,7 +44,7 @@ return(
       <h5 className="col wind-speed">
         Wind:
         <br />
-        <span id="wind-value">{Math.round(props.data.wind)}</span> m/s
+        <span id="wind-value">{Math.round(props.data.wind)}</span> mph
       </h5>
 </div>
 </div>
