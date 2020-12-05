@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Location from "./location-symbol.png";
 import Search from "./search-symbol.png";
-import FormatDate from "./FormatDate";
+import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState( {ready: false} );
@@ -43,7 +43,6 @@ export default function Weather(props) {
   return (
     <div>
     <div className="City">
-      <FormatDate />
       <form onSubmit={handleSubmit} id="form-all">
         <div className="input-group">
           <input
@@ -57,13 +56,6 @@ export default function Weather(props) {
           <span className="input-group-btn">
             <button id="button" className="btn btn-default" type="submit">
               <img id="search-button-image" src={Search} alt="" />
-            </button>
-            <button
-              id="location-button"
-              className="btn btn-default"
-              type="button"
-            >
-              <img id="location-button-image" src={Location} alt="" />
             </button>
           </span>
         </div>
