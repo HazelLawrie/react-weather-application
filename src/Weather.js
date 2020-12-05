@@ -18,7 +18,8 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       city: response.data.name,
-      date: new Date(response.data.dt * 1000)
+      date: new Date(response.data.dt * 1000),
+      icon: response.data.weather[0].icon
     });
   }
 
@@ -61,8 +62,7 @@ export default function Weather(props) {
     </div>
   );
   } else {
-    
     search();
-  return "Test...!";
+  return "Loading...";
 }
 }

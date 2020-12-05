@@ -1,6 +1,6 @@
 import React from "react";
-import Search from "./search-symbol.png";
 import FormatDate from "./FormatDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
 return(
@@ -10,7 +10,7 @@ return(
         {props.data.city}
       </h2>
       <h2 id="main-temp" className="temp">
-        <img className="text-capitalize" id="main-icon" alt={props.data.description} src={Search} />
+          <WeatherIcon code={props.data.icon} />
         <span id="displayed-temp">
           {Math.round(props.data.temperature)}°C
         </span>
