@@ -108,6 +108,11 @@ hr {
   display: inline;
   margin-left: 10px;
 }
+
+.unit {
+  margin-right: 8px;
+}
+
 #main-icon {
   margin: 0;
   width: 100px;

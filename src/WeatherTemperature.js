@@ -33,13 +33,18 @@ return ( <div className="WeatherTemperature">
 } else {
     return (
       <div className="WeatherTemperature">
-        <span className="temperature">{Math.round(fahrenheit())}</span>
-        <span className="unit">
-          <a href="/" onClick={showCelsius}>
-            °C
-          </a>{" "}
-          | °F
+        <span className="temperature">
+          {Math.round(fahrenheit())}
         </span>
+        <span className="unit">
+          °F {" "}
+        </span>
+          <a href="/" className="col" id="change-to-C" onClick={showCelsius}>
+          °C
+        </a>
+        <a href="/" id="change-to-F" onClick={showFahrenheit}>
+          °F
+        </a>
       </div>
     );
   }
