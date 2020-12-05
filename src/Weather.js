@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Location from "./location-symbol.png";
 import Search from "./search-symbol.png";
 import "./Weather.css";
 

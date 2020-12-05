@@ -1,14 +1,16 @@
 
-import './Weather.css';
+import "./App.css";
+import "./Weather.css";
+import Weather from "./Weather";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>
-          React Weather Application
-        </h1>
-      </header>
+       <div className="container">
+        <Weather defaultCity="Glasgow" />
+        <Footer />
+    </div>
     </div>
   );
 }
