@@ -30,6 +30,11 @@ body {
 
 #button {
   margin: 20px 0 0 0;
+  background-color: #be9af7;
+}
+
+#button:hover {
+  background-color: #9b6ece;
 }
 
 footer p a {
@@ -57,7 +62,6 @@ h1 {
 }
 button {
   color: #fff;
-  background-color: #9b6ece;
   border: 0;
   border-radius: 0 5px 5px 0;
 }
@@ -67,13 +71,6 @@ button {
 }
 .btn {
   border-radius: 0 5px 5px 0;
-  background-color: #3f385e;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: #9b6ece;
-  box-shadow: 1px 1px 12px 0 rgb(94, 78, 88, 0.3);
 }
 
 #search-button-image {
