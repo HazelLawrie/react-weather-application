@@ -74,8 +74,8 @@ button {
 }
 
 #search-button-image {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   margin: 0;
 }
 
@@ -357,7 +357,7 @@ footer {
   }
   #button,
   #location-button {
-    padding: 6px;
+    padding: 4.5px;
     margin-left: 0;
   }
   #input {
